@@ -13,7 +13,6 @@ Explore the world of social media through this clone's interface and get a glimp
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributions](#contributions)
 - [License](#license)
@@ -36,12 +35,6 @@ Explore the world of social media through this clone's interface and get a glimp
 - CSS3
 - JavaScript
 
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/Instagram-Clone.git
 ## Usage
 
 To use this Instagram Clone, follow these steps:
