@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+#left-side-section {
+  /* layout */
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 244px;
+  padding: 8px 12px 20px 12px;
+  flex: 0 0 300px;
+  /* text */
+  direction: ltr;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* appearance */
+  color: white;
+
+  /* ig-separator */
+  border-right: 1px solid rgb(38, 38, 38);
+
+  /* other */
+  color-scheme: dark;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.intagram-name-icon {
+  height: 60px;
+  padding: 33px 12px 0px 12px;
+}
+.nav-bar {
+  height: 775px;
+  padding-left: 12px;
+}
+.home-button,
+.search-button,
+.explore-button,
+.reels-button,
+.messages-button,
+.notifications-button,
+.create-button,
+.profile-button,
+.more-button {
+  height: 56px;
+  width: 220px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.more-button {
+  padding-left: 12px;
+}
+.home-text,
+.search-text,
+.explore-text,
+.reels-text,
+.messages-text,
+.notifications-text,
+.create-text,
+.profile-text,
+.more-text {
+  padding-left: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+.profile_pic {
+  height: 24px;
+  border-radius: 100px;
+}
+
+#main-content {
+  padding-top: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: aliceblue;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.main-center {
+  display: block;
+  max-width: 630px;
+  width: 100%;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+  height: 100vh;
+  --feed-sidebar-width: 319px;
+}
+
+.myProfile,
+.suggested-for-you {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 33px;
+  height: 44px;
+  width: 287px;
+}
+
+.my-profile-image {
+  height: 44px;
+  border-radius: 100px;
+  margin-right: 8px;
+  border: 0.5px solid #706f6f;
+  padding: 2px;
+}
+.username-main-right {
+  display: block;
+  margin-right: 80px;
+  width: 111px;
+}
+.name-main-right {
+  color: #a8a8a8;
+}
+temp {
+  font-weight: 600;
+}
+.switch-profile-image {
+  font-size: 12px;
+  color: rgb(0, 149, 246);
+}
+.suggested-for-you {
+  font-size: 14px;
+  margin-top: 14px;
+  color: #a8a8a8;
+  font-weight: 750;
+}
+
+.see-all {
+  font-weight: 750;
+  font-size: 12px;
+  margin-left: 128px;
+}
+td {
+  padding-bottom: 12px;
+}
+.s1-image {
+  height: 44px;
+  border-radius: 100px;
+  margin-right: 8px;
+}
+
+.s1-id {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 100px;
+}
+
+#s1-main-right {
+  font-size: 14px;
+}
+
+#follow > a {
+  font-size: 12px;
+  color: rgb(0, 149, 246);
+}
+
+.required-link {
+  color: rgb(115, 115, 115);
+  font-size: 12px;
+  font-weight: 400;
+}
+.required-link a:link {
+  color: rgb(115, 115, 115);
+  font-weight: 400;
+}
+.required-link a:hover {
+  text-decoration: underline;
+}
+.required-link a:visited {
+  color: rgb(115, 115, 115);
+  font-weight: 400;
+}
+.copyright {
+  font-size: 12px;
+  color: rgb(115, 115, 115);
+  font-weight: 400;
+}
+
+/* main center contents */
+
+.story-feature {
+  padding-top: 8px;
+  margin-top: 16px;
+  height: 80px;
+  width: 66px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* space between each story */
+.leftmargin {
+  margin-left: 14px;
+}
+
+/* common propert for each user */
+.user {
+  background-color: black;
+  border: 0px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* story image */
+.user-image {
+  height: 56px;
+  position: absolute;
+  border-radius: 100px;
+  border: 2.5px solid black;
+  margin-top: 2px;
+}
+
+/* user name that can be seen below the story */
+#user-user-name {
+  margin-top: 70px;
+  font-size: 12px;
+  color: white;
+  white-space: nowrap;
+  width: 66px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ring on stories */
+.ring {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(#dd2a7b, #f58529);
+  border-radius: 100px;
+  position: absolute;
+}
+
+/* main scrollable content start */
+.contents {
+  margin-top: 20px;
+  padding: 35px 81px 0px 81px;
+  height: 1000px;
+  
+}
+
+/* user001 */
+.user001 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.user001-id {
+  height: 42px;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.user001-image {
+  height: 32px;
+  border-radius: 100px;
+  border: 2px solid black;
+  margin-left: 2px;
+}
+.user000-ring {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(#dd2a7b, #f58529);
+  border-radius: 100px;
+  position: absolute;
+  z-index: -1;
+}
+.user001-username {
+  font-size: 14px;
+  font-weight: 600;
+  width: 395px;
+}
+#upload-timing {
+  color: #a8a8a8;
+  font-weight: 400;
+}
+#post-music {
+  font-size: 12px;
+  width: 390px;
+}
+.user001-content {
+  margin-top: 8px;
+  border: 1px solid #262626;
+  border-radius: 3px;
+}
+.user001-video {
+  width: 475px;
+  height: 595px;
+}
+.user001-engagement{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.user001-engagement{
+  margin-top: 15px;
+}
+
+.user001-comment, .user001-share{
+  margin-left: 17px;
+}
+.user001-save{
+  margin-left: 346px;
+}
+.no-of-likes, .username-in-caption{
+  margin-top: 11px;
+  margin-bottom: 11px;
+  font-size: 15px;
+  font-weight: 600;
+}
+#content-caption{
+  font-size: 14px;
+  font-weight: 400;
+}
+.more-in-caption, .view-all-comment{
+  font-size: 14px;
+  color: #a8a8a8;
+}
+
+#some-comment{
+  font-size: 15px;
+  font-weight: 350;
+}
+.weight{
+  font-weight: 600;
+}
+input{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 447px;
+  background-color: black;
+  border: none;
+  font-size: 14px;
+  font-weight: 450;
+}
+hr{
+  height: 0.1px;
+  border-color: #262626;
+  margin-bottom: 20px;
+}

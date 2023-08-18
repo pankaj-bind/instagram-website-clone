@@ -1,0 +1,241 @@
+body {
+    padding:5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container-changeimage {
+    position: relative;
+    height: 635px;
+    width: 465px;
+    background-image: url('../images/home-phones.png');
+    background-size: cover;
+}
+
+.box-changeimgage {
+    position: absolute;
+    width: 250px;
+    top: 30px;
+    left: 155px;
+    height: 541px;
+    background-image: url('image1.jpg');
+    background-size: cover;
+    animation: imageChange 30s infinite;
+}
+
+@keyframes imageChange {
+    0% {
+        background-image: url('../images/screenshot1.png');
+    }
+    25% {
+        background-image: url('../images/screenshot2.png');
+    }
+    50% {
+        background-image: url('../images/screenshot3.png');
+    }
+    75% {
+        background-image: url('../images/screenshot4.png');
+    }
+    100% {
+        background-image: url('../images/screenshot2.png');
+    }
+}
+.animation-image {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.part1 {
+    height: 377px;
+    width: 348px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0.8px solid #c7c0c0;
+    margin-bottom: 10px;
+}
+
+.instagram-image img{
+    height: 50px;
+    width: 174px;
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+.instagram-image{
+    padding: 0% 23%;
+}
+/* /*  */
+form{
+    padding: 0% 10%;
+}
+.input-group {
+    position: relative;
+}
+
+.input {
+    padding-left: 5px;
+    height: 28px;
+    width: 273px;
+    padding-top: 10px;
+    background: #fafafa;
+    border: 0.8px solid #c7c0c0;
+    outline: none;
+    border-radius: 1px;
+    margin-bottom: 4px;
+}
+
+.placeholder {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    font-size: 12px;
+    
+    color: #737070;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input:focus+.placeholder,
+.input:not(:placeholder-shown)+.placeholder {
+    top: -1px;
+    color: #737070;
+}
+
+.button1{
+    height: 32px;
+    width: 272.4px;
+    background-color: #4db5f9;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: #4db5f9;
+    background-color: #4db5f9;
+    color: #fcfcfc;
+    font-weight: 600;
+    padding: 7px 16px;
+}
+.button1:hover{
+    background-color: #1da2fa;
+}
+.or{
+    height: 14.988px;
+    width: 268.400px;
+    margin-top: 10px;
+    
+}
+.hr1,.hr2{
+    float: left;
+    width:105px;
+    margin-top: 15px;
+    color: #dbdbdb;
+}
+.or1{
+    margin-top: 5px;
+    float: left;
+    height: 14.988px;
+    width: 17.925px;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-size: 13px;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+.facebook{
+    padding: 0% 20%;
+    margin-top: 35px;
+    height: 19.6px;
+    width: 268.4px;
+    color: #385185;
+    font-size: 14px;
+    align-items: center;
+}
+.fb{
+    height: 15px; 
+    margin-left: 8px; 
+}
+.log-in-with-fb{
+    font-size: 15px;
+    color: #00376b;
+}
+.forget{
+    padding: 0% 34%;
+    height: 16px;
+    width: 348.4px;
+    font-size: 12px;
+    margin-top: 24px;
+}
+a[href="forget.html"],a{
+    color: #00376b;
+    text-decoration: none;
+}
+.signup{
+    height: 41px;
+    width: 348.4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0.8px solid #c7c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a[href="signup.html"]{
+    padding-left: 2px;
+    color: #4db5f9;
+}
+.app{
+    height: 94.6px;
+    width: 350px;
+}
+.getapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app{
+    padding-top: 15px;
+}
+.source{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43.6px;
+    width: 350px;
+}
+img[src="/image/8.png"],img[src="/image/7.png"]{
+    height: 40px;
+    margin: 4px;
+}
+a {
+    text-decoration: none;
+}
+
+.language {
+    margin-top: 15px;
+}
+
+temp {
+    color: white;
+}
+
+.bottom2,
+.language2,
+.language {
+    padding-right: 20px;
+    color: #8e8e8e;
+    font-size: 12px;
+    flex-direction: row;
+}
+
+.bottom,
+.language {
+    justify-content: center;
+    align-items: center;
+}
+
+.language2 {
+    border: 1px solid white;
+    width: 100px;
+}
+@media (max-width: 900px) {
+    .container-changeimage {
+      display: none;
+    }
+}

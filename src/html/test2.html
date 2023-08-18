@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>likeImage_user001 Like/Dislike</title>
+  <style>
+    /* Add your CSS styles here if needed */
+  </style>
+</head>
+<body bgcolor="black">
+  <div class="like-container-user001">
+    <img id="likeImage_user001" src="../images/unlike.png" alt="Dislike likeImage_user001">
+  </div>
+  <div id="centerSvgContainer" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <svg width="100" height="100">
+      <!-- Add your SVG content here -->
+    </svg>
+  </div>
+  <script>
+    const likeImage_user001 = document.getElementById("likeImage_user001");
+    const centerSvgContainer = document.getElementById("centerSvgContainer");
+    let isLiked = false;
+
+    likeImage_user001.addEventListener("click", toggleLike);
+
+    function toggleLike() {
+      isLiked = !isLiked;
+      likeImage_user001.style.transform = "scale(0.1)";
+
+      if (isLiked) {
+        likeImage_user001.src = "../images/like.png";
+      } else {
+        likeImage_user001.src = "../images/unlike.png";
+      }
+
+      setTimeout(() => {
+        likeImage_user001.style.transform = "scale(1)";
+        showCenterSvg();
+      }, 100);
+    }
+
+    function showCenterSvg() {
+      centerSvgContainer.style.display = "block";
+      setTimeout(() => {
+        centerSvgContainer.style.display = "none";
+      }, 1000); // Show for 1 second
+    }
+  </script>
+</body>
+</html>
