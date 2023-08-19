@@ -1,6 +1,7 @@
 # Instagram Website Clone
 
 ![Instagram Clone](./src/images/instagram-login-page.png)
+![Instagram Clone](./src/images/instagram-home-screen.png)
 
 ## Project Overview
 
