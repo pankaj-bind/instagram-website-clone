@@ -48,7 +48,7 @@ Feel free to explore and interact with the various features to get a sense of ho
 
 ## Contributions
 
-Contributions are not being accepted for this project as it's intended for personal learning and portfolio purposes. However, feel free to fork the repository and adapt the code for your own projects.
+Welcoming contributors to enhance the project collaboratively. Join to improve and innovate together!
 
 ## License
 
