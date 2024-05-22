@@ -85,6 +85,9 @@ a {
 a:visited {
   color: white;
 }
+a div span {
+  color: white;
+}
 .profile_pic {
   height: 24px;
   border-radius: 100px;
@@ -141,6 +144,7 @@ a:visited {
   color: #a8a8a8;
 }
 temp {
+  color: white;
   font-weight: 600;
 }
 .switch-profile-image {
@@ -176,6 +180,7 @@ td {
 }
 
 #s1-main-right {
+  color: white;
   font-size: 14px;
 }
 
